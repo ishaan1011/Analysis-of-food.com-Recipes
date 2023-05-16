@@ -47,7 +47,7 @@ As stated previously, we chose to explore the relationship between the number of
 
 **alpha = 0.05**
 
-plot
+<iframe src="assets/perm-test-steps.html" width=800 height=600 frameBorder=0></iframe>
 
 
 **P-value = 0.01**
