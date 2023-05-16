@@ -42,11 +42,13 @@ As stated previously, we chose to explore the relationship between the number of
 
 **Alternative hypothesis:** There is a relationship between the number of steps in a recipe and the average rating of that recipe.
 
+
 **Test Statistic:** TVD between short, medium, and long recipes with the overall mean of `average_rating`.
 
 **alpha = 0.05**
 
 plot
+
 
 **P-value = 0.01**
 
