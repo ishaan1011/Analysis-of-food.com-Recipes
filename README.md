@@ -14,7 +14,7 @@ The following dataset was downloaded from [food.com](https://www.food.com) as tw
 
 ---
 # Bivariate Analysis
-<iframe src="bivariate-plot.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/bivariate-plot.html" width=800 height=600 frameBorder=0></iframe>
 
 ---
 # Data Aggregates
