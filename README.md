@@ -16,6 +16,8 @@ The following dataset was downloaded from [food.com](https://www.food.com) as tw
 # Bivariate Analysis
 <iframe src="assets/bivariate-plot.html" width=800 height=600 frameBorder=0></iframe>
 
+The plot above is a scatter plot of n_steps versus average rating (where duplicate `id` rows were dropped as `n_steps` and `average_rating` are the same for the same recipe). From the scatter plot, we can see a general trend where recipes with more steps have more instances of a recipe with a higher average_rating, possibly indicating that, with further analysis needing to prove it, recipes with more steps, on average, have a higher average rating.
+
 ---
 # Data Aggregates
 
