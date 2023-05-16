@@ -20,6 +20,7 @@ The plot above is a scatter plot of n_steps versus average rating (where duplica
 
 ---
 # Data Aggregates
+<iframe src="assets/pivot_table_steps.html" width="800" height="600" frameborder="0"></iframe>
 
 ---
 # NMAR Analysis
