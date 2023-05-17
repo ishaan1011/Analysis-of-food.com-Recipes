@@ -28,42 +28,42 @@ There is a list of data cleaning steps that were followed in order to make the a
    The merging of the `recipes_df` and `interactions_df` dataframes allows for a comprehensive analysis by combining recipe information with interaction data. It ensures that the average rating of each recipe can be accurately calculated and associated with the corresponding recipe.
 
 * **Handling Missing Ratings:**
-   By replacing zero values in the 'rating' column with NaN, we distinguish between missing ratings and zero ratings. This step ensures that the calculation of the average rating is not skewed by zero values and allows for a more accurate assessment of the relationship between the number of steps and the average rating.
+   By replacing zero values in the `rating` column with 'NaN', we distinguish between missing ratings and zero ratings. This step ensures that the calculation of the average rating is not skewed by zero values and allows for a more accurate assessment of the relationship between the number of steps and the average rating.
 
 * **Calculating Average Ratings:**
    The calculation of the average rating for each recipe provides a single value representing the overall rating. This average rating serves as a metric to measure the recipe's quality and popularity, allowing for comparisons and analysis based on the aggregated ratings.
 
-* **Cleaning the 'name' Column:**
-   Cleaning the 'name' column by removing leading and trailing white spaces and converting 'MISSING' values back to NaN has a negligible effect on the analysis of the relationship between the number of steps and the average rating. It ensures data consistency and avoids potential inconsistencies in subsequent analyses.
+* **Cleaning the `name` Column:**
+   Cleaning the `name` column by removing leading and trailing white spaces has a negligible effect on the analysis of the relationship between the number of steps and the average rating. It ensures data consistency and avoids potential inconsistencies in subsequent analyses.
 
-* **Cleaning the 'submitted' Column:**
-   Converting the 'submitted' column to a datetime format ensures that temporal information can be properly analyzed, but it has no direct impact on assessing the relationship between the number of steps and the average rating.
+* **Cleaning the `submitted` Column:**
+   Converting the `submitted` column to a datetime format ensures that temporal information can be properly analyzed, but it has no direct impact on assessing the relationship between the number of steps and the average rating.
 
-* **Cleaning the 'tags' Column:**
-   Cleaning the 'tags' column ensures that the tags are transformed into a suitable format for analysis. However, the 'tags' column is not directly related to the analysis of the relationship between the number of steps and the average rating.
+* **Cleaning the `tags` Column:**
+   Cleaning the `tags` column ensures that the tags are transformed into a suitable format for analysis. However, the 'tags' column is not directly related to the analysis of the relationship between the number of steps and the average rating.
 
-* **Cleaning the 'nutrition' Column:**
-   The cleaning of the 'nutrition' column and extracting specific nutrition values have no direct impact on analyzing the relationship between the number of steps and the average rating. These nutrition values may be useful for exploring other aspects of the dataset.
+* **Cleaning the `nutrition` Column:**
+   The cleaning of the `nutrition` column and extracting specific nutrition values have no direct impact on analyzing the relationship between the number of steps and the average rating. These nutrition values may be useful for exploring other aspects of the dataset.
 
-* **Cleaning the 'steps' Column:**
-   Cleaning the 'steps' column by splitting the string into a list of individual steps and removing unnecessary characters allows for a structured analysis of recipe steps. It enables counting the number of steps accurately, which is crucial for assessing the relationship with the average rating.
+* **Cleaning the `steps` Column:**
+   Cleaning the `steps` column by splitting the string into a list of individual steps and removing unnecessary characters allows for a structured analysis of recipe steps. It enables us to make sure that the `n_steps` column has correct data and is in accordance with the the number of steps listed in teh `steps` column. This ensures that the data is accurate, which is crucial for assessing the relationship with the average rating.
 
-* **Cleaning the 'description' Column:**
-   Cleaning the 'description' column by replacing missing values with 'MISSING' has no direct impact on the analysis of the relationship between the number of steps and the average rating. However, it ensures that missing descriptions are appropriately identified and handled.
+* **Cleaning the `description` Column:**
+   Cleaning the `description` column by replacing missing values with 'MISSING' has no direct impact on the analysis of the relationship between the number of steps and the average rating. However, it ensures that missing descriptions are appropriately identified and handled.
 
-* **Cleaning the 'ingredients' Column:**
-    Cleaning the 'ingredients' column by splitting the string into a list of individual ingredients and removing unnecessary characters has no direct impact on analyzing the relationship between the number of steps and the average rating. It facilitates structured analysis of the ingredients but does not influence the relationship.
+* **Cleaning the `ingredients` Column:**
+    Cleaning the `ingredients` column by splitting the string into a list of individual ingredients and removing unnecessary characters has no direct impact on analyzing the relationship between the number of steps and the average rating. It facilitates structured analysis of the ingredients but does not influence the relationship.
 
-* **Cleaning the 'date' Column:**
-    Converting the 'date' column to a datetime format ensures proper handling of temporal information. While it may be relevant for other time-related analyses, it does not directly affect the analysis of the relationship between the number of steps and the average rating.
+* **Cleaning the `date` Column:**
+    Converting the `date` column to a datetime format ensures proper handling of temporal information. While it may be relevant for other time-related analyses, it does not directly affect the analysis of the relationship between the number of steps and the average rating.
 
-* **Cleaning the 'review' Column:**
-    Cleaning the 'review' column by replacing HTML entities ensures the readability and consistency of the review text. This cleaning step is not directly related to analyzing the relationship between the number of steps and the average rating.
+* **Cleaning the `review` Column:**
+    Cleaning the `review` column by replacing HTML entities ensures the readability and consistency of the review text. This cleaning step is not directly related to analyzing the relationship between the number of steps and the average rating.
 
-* **Dropping the 'recipe_id' Column:**
-    Dropping the 'recipe_id' column after the merge operation does not affect the analysis of the relationship between the number of steps and the average rating.
+* **Dropping the `recipe_id` Column:**
+    Dropping the `recipe_id` column after the merge operation does not affect the analysis of the relationship between the number of steps and the average rating.
     
-* Overall, by following these steps and cleaning the data, we made the analysis of the relationship between the number of steps in a recipe and its average rating easier and more accurate.
+Overall, by following these steps and cleaning the data, we made the analysis of the relationship between the number of steps in a recipe and its average rating easier and more accurate.
 
 ---
 # Univariate Analysis #
