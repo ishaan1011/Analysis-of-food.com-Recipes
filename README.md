@@ -35,7 +35,7 @@ The pivot table above looks at the distribution of average ratings (grouped toge
 
 As stated previously, we chose to explore the relationship between the number of steps in a recipe and the average rating of that recipe. To test this we set up the following permutation test:
 
-**We define short recipes as recipes less than 9 steps and long recipes as those with 11 or more steps.** This value was chosen carefully as to split the number of recipes in each category evenly (roughly 50% of the data in each category).
+**We define short recipes as recipes less than 9 steps and long recipes as those with 9 or more steps.** This value was chosen carefully as to split the number of recipes in each category evenly (roughly 50% of the data in each category).
 
 **Null hypothesis:** There is no observable relationship between the number of steps in a recipe and the average rating of that recipe.
 
