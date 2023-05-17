@@ -6,7 +6,18 @@ Authors: Joey Kaminsky and Ishaan Chadha
 ---
 # Introduction
 
-The following dataset was downloaded from [food.com](https://www.food.com) as two datasets: one containing receipes and their specific attributes and another with ratings and their reviews of recipes. We merged these datasets into one to be able to answer the following question: is there a relationship between the number of steps in a recipe and the average rating of that recipe?. 
+The following dataset was downloaded from [food.com](https://www.food.com) as two datasets: one containing receipes and their specific attributes and another with ratings and their reviews of recipes. We merged these datasets into one to be able to answer the following question: is there a relationship between the number of steps in a recipe and the average rating of that recipe?
+
+This is an important question in the world of cooking. From this question, we can gain some insight as to whether the number of steps in a recipe factors into its rating. This can influence cooks to edit the number of steps in their new recipes in the hopes of a greater rating by reviewers.
+
+After cleaning the data, this dataset has 234,429 rows and 26 columns (234,429 rows and 18 columns prior to cleaning the data). In order to get familiar with the dataset, here are some important columns that will be mentioned:
+
+- `name`: name of the recipe
+- `id`: the id of a recipe, where the same recipe has the same value for this column 
+- `n_steps`: the number of steps in the recipe
+- `user_id`: reviewer of the recipe `user_id`
+- `rating`: the rating given for the recipe by the reviewer, `user_id`
+- `average_rating`: the mean rating of a recipe `id`; recipes with the same `id` have the same value for this column
 
 ---
 # Data Cleaning
