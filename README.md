@@ -42,6 +42,20 @@ The pivot table above looks at the distribution of average ratings (grouped toge
 ---
 # NMAR Analysis
 
+The missingness in the `description` column could potentially be classified as NMAR based on the premise that the description might not be required since the recipe name itself could be self-explanatory.
+
+Reasoning:
+If users perceive that the recipe name adequately conveys the essential information about the dish, they may choose not to provide a description. In such cases, the missingness in the `description` column would be driven by the nature of the recipe itself rather than random or observable factors, suggesting the presence of NMAR.
+
+Additional Data and Strategies:
+1. Recipe Complexity Measures: Obtaining additional data or create new variables that capture the complexity or novelty of each recipe. This could include metrics such as specific culinary techniques required. Analyzing the relationship between recipe complexity and missingness in the `description` column could provide insights into whether the missingness is related to the inherent characteristics of the recipes.
+
+2. User Experience and Expertise: Gathering information about the contributors' culinary experience, expertise, or familiarity with the specific cuisine. Contributors with more experience might be less likely to provide descriptions for recipes they are already familiar with, assuming that others would understand the recipe based on the name alone. Exploring this relationship between contributor expertise and missingness in the `description` column could help identify potential MAR patterns.
+
+3. Recipe Category or Type: Categorizing or classifying the recipes based on their type, such as appetizers, main courses, desserts, etc. can help us explore whether missingness in the `description` column varies across different recipe categories. If there are consistent patterns within specific categories, it could provide insights into the missingness mechanism and help assess the MAR assumption.
+
+By incorporating these additional data and strategies, it may be possible to explore alternative explanations for the missingness in the `description` column and evaluate whether the missingness can be considered MAR rather than NMAR. This deeper understanding can guide appropriate data handling techniques and mitigate potential biases caused by missing values during subsequent analysis.
+
 ---
 # Missingness Dependency Analysis
 
