@@ -24,7 +24,7 @@ After cleaning the data, this dataset has 234,429 rows and 26 columns (234,429 r
 
 ---
 # Univariate Analysis #
-
+<iframe src="assets/univariate-plot.html" width=800 height=600 frameBorder=0></iframe>
 
 In this analysis, we examine the box plot representation of the "n_steps" column, which provides insights into the distribution of step lengths in recipes. The box plot reveals that, on average, recipes tend to have around 6 to 13 steps. The box plot's median line represents the middle value of the dataset, showing that recipes typically have a step count of 9. A lower fence of 1 and an upper fence of 23 indicates that the length for almost all recipes lies between 1 and 23 steps. However, outliers are observed with step counts reaching 100, suggesting the presence of a few recipes with significantly more complex procedures.
 
