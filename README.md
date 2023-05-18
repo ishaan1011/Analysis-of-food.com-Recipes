@@ -98,7 +98,7 @@ On the other hand, `review` could possibly be proven as MAR if more data is coll
 
 2. `rating`: In this scenario, we would get more reviews in general from any `user_id`, new or already in the dataframe. Depending on someone's emotional state when filling out a review (enraged, neutral, or happy), this could impact whether they leave `review` blank or not. If someone was very dissatisfied with the recipe, they could leave a 1 star `rating` and be done with their review as they could feel that their rating conveys their feelings. If someone was content or neutral with the recipe, they could leave 3 stars and no review as they may not have anything to add beyond the `rating`. And people happy with the recipe could leave 5 stars and no review due to the fact that they feel that the stars convey their satisfaction. 
 
-3. `id`:  In this scenatio, we would get more reviews form the same recipes in the dataset. Perhaps more common recipes may not elicit a `review` due to the fact that the reviewer felt that the recipe is too common and does not evoke a need for a review beyond a rating.
+3. `id`:  In this scenario, we would get more reviews form the same recipes in the dataset. Perhaps more common recipes may not elicit a `review` due to the fact that the reviewer felt that the recipe is too common and does not evoke a need for a review beyond a rating.
 
 
 By incorporating these additional data and strategies, it may be possible to explore alternative explanations for the missingness in the `review` column and evaluate whether the missingness can be considered MAR rather than NMAR. This deeper understanding can guide appropriate data handling techniques and mitigate potential biases caused by missing values during subsequent analysis.
