@@ -79,7 +79,7 @@ In this analysis, we examine the box plot representation of the "n_steps" column
 # Bivariate Analysis
 <iframe src="assets/bivariate-plot.html" width=800 height=600 frameBorder=0></iframe>
 
-The plot above is a scatter plot of `n_steps` versus `average_rating` (where duplicate `id` rows were dropped as `n_steps` and `average_rating` are the same for the same recipe). From the scatter plot, we can see a general trend where recipes with more steps have a lower proportion of recipes with a low `average_rating` compated to recipes with less steps; this would also convey that recipes with more steps have a higher proportion of recipes with a higher average rating compared to recipes with less steps. This graph, therefore, possibly indicates that--with further analysis needing to prove it--recipes with more steps, on average, are more likely to have a higher average rating.
+The plot above is a scatter plot of `n_steps` versus `average_rating` (where duplicate `id` rows were dropped as `n_steps` and `average_rating` are the same for the same recipe). From the scatter plot, we can see a general trend where recipes with more steps have a lower proportion of recipes with a low `average_rating` compared to recipes with less steps; this would also convey that recipes with more steps have a higher proportion of recipes with a higher average rating compared to recipes with less steps. This graph, therefore, possibly indicates that--with further analysis needing to prove it--recipes with more steps, on average, are more likely to have a higher `average_rating`.
 
 ---
 # Data Aggregate
