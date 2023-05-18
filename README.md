@@ -82,7 +82,7 @@ The plot above is a scatter plot of n_steps versus average rating (where duplica
 
 ---
 # Data Aggregate
-<iframe src="assets/pivot_table_steps.html" width="800" height="300" frameborder="0"></iframe>
+<iframe src="assets/pivot_table_steps.html" width="800" height="200" frameborder="0"></iframe>
 The pivot table above looks at the distribution of average ratings (grouped together in intervals of 1 to better visualize any possible trends) for each `n_steps` value in the dataframe. This is interesting as it allows one to potentially point out any possible relationship between the two variable to further explore. Note that the column for 71 steps is all 0's; this is due to the fact that the only recipe with 71 steps had no review, so we replaced the `np.NaN` values with 0's.
 
 ---
