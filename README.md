@@ -47,7 +47,7 @@ There is a list of data cleaning steps that were followed in order to make the a
    Cleaning the `tags` column ensures that the tags are transformed into a suitable format for analysis.
 
 * **Cleaning the nutrition Column:**
-   The cleaning of the `nutrition` column and extracting specific nutrition values have no direct impact on analyzing the relationship between the number of steps and the average rating. These nutrition values may be useful for exploring other aspects of the dataset.
+   The cleaning of the `nutrition` column and extracting specific nutrition values may be useful for exploring other aspects of the dataset.
 
 * **Cleaning the steps Column:**
    Cleaning the `steps` column by splitting the string into a list of individual steps and removing unnecessary characters allows for a structured analysis of recipe steps. It enables us to make sure that the `n_steps` column has correct data and is in accordance with the the number of steps listed in the `steps` column. This ensures that the data is accurate, which is crucial for assessing the relationship with the average rating.
@@ -56,7 +56,7 @@ There is a list of data cleaning steps that were followed in order to make the a
    Cleaning the `description` column by replacing missing values with 'MISSING' ensures that missing descriptions are appropriately identified and handled.
 
 * **Cleaning the ingredients Column:**
-    Cleaning the `ingredients` column by splitting the string into a list of individual ingredients and removing unnecessary characters facilitates structured analysis of the ingredients but does not influence the relationship.
+    Cleaning the `ingredients` column by splitting the string into a list of individual ingredients and removing unnecessary characters facilitates structured analysis of the ingredients and ensures that the length of the lists in `ingredients` is equal to `n_ingredients`.
 
 * **Cleaning the date Column:**
     Converting the `date` column to a datetime format ensures proper handling of temporal information, which may be relevant for time-related analyses.
