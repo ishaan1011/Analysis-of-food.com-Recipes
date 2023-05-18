@@ -88,19 +88,21 @@ The pivot table above looks at the distribution of average ratings (grouped toge
 ---
 # NMAR Analysis
 
-The missingness in the `description` column could potentially be classified as NMAR based on the premise that the description might not be required since the recipe name itself could be self-explanatory.
+The missingness in the `review` column could potentially be classified as NMAR based on the premise that the reviewer, `user_id`, might have been too lazy to write out an explanation for their `rating` of the recipe `id`.
 
 Reasoning:
-If users perceive that the recipe name adequately conveys the essential information about the dish, they may choose not to provide a description. In such cases, the missingness in the `description` column would be driven by the nature of the recipe itself rather than random or observable factors, suggesting the presence of NMAR.
+Depending on how the reviewer felt when filling out their review, they could have been too lazy, too tired, or just accidentally failed to fill out the review column. This would lead to a `np.NaN` value for their review of the recipe `id`. This would indicate that the `review` column is NMAR.
 
-Additional Data and Strategies:
-1. Recipe Complexity Measures: Obtaining additional data or create new variables that capture the complexity or novelty of each recipe. This could include metrics such as specific culinary techniques required. Analyzing the relationship between recipe complexity and missingness in the `description` column could provide insights into whether the missingness is related to the inherent characteristics of the recipes.
+On the other, hand, `review` could possibly be proven as MAR if more data is collected. From more data being collected, we could possibly prove that this column is MAR in the following scenarios:
 
-2. User Experience and Expertise: Gathering information about the contributors' culinary experience, expertise, or familiarity with the specific cuisine. Contributors with more experience might be less likely to provide descriptions for recipes they are already familiar with, assuming that others would understand the recipe based on the name alone. Exploring this relationship between contributor expertise and missingness in the `description` column could help identify potential MAR patterns.
+1. `user_id`: In this scenario, we would get more reviews from the same reviewers. If the same users are neglecting to leave a review when reviewing a recipe, we could label `review` as MAR due to this column being dependent on `user_id` for missingness.
 
-3. Recipe Category or Type: Categorizing or classifying the recipes based on their type, such as appetizers, main courses, desserts, etc. can help us explore whether missingness in the `description` column varies across different recipe categories. If there are consistent patterns within specific categories, it could provide insights into the missingness mechanism and help assess the MAR assumption.
+2. `rating`: In this scenario, we would get more reviews in general from any `user_id`, new or already in the dataframe. Depending on someone's emotional state when filling out a review (enraged, neutral, or happy), this could impact whether they leave `review` blank or not. If someone was very dissatisfied with the recipe, they could leave a 1 star `rating` and be done with their review as they could feel that their rating conveys their feelings. If someone was content or neutral with the recipe, they could leave 3 stars and no review as they may not have anything to add beyond the `rating`. And people happy with the recipe could leave 5 stars and no review due to the fact that they feel that the stars convey their satisfaction. 
 
-By incorporating these additional data and strategies, it may be possible to explore alternative explanations for the missingness in the `description` column and evaluate whether the missingness can be considered MAR rather than NMAR. This deeper understanding can guide appropriate data handling techniques and mitigate potential biases caused by missing values during subsequent analysis.
+3. `id`:  In this scenatio, we would get more reviews form the same recipes in the dataset. Perhaps more common recipes may not elicit a `review` due to the fact that the reviewer felt that the recipe is too common and does not evoke a need for a review beyond a rating.
+
+
+By incorporating these additional data and strategies, it may be possible to explore alternative explanations for the missingness in the `review` column and evaluate whether the missingness can be considered MAR rather than NMAR. This deeper understanding can guide appropriate data handling techniques and mitigate potential biases caused by missing values during subsequent analysis.
 
 ---
 # Missingness Dependency Analysis
