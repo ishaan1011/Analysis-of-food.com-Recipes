@@ -19,7 +19,7 @@ After cleaning the data, this dataset has 234,429 rows and 26 columns (234,429 r
 
 ---
 # Data Cleaning
-<iframe src="assets/table2.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/table.html" width=800 height=600 frameBorder=0></iframe>
 
 
 
@@ -117,7 +117,7 @@ We are exploring whether `description` is MCAR or MAR. We used the following per
 
 **alpha = 0.05**
 
-<iframe src="assets/perm-test-steps.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/emperical_dist_description_avg_rating.html" width=800 height=600 frameBorder=0></iframe>
 
 
 **P-value = 0.006**
