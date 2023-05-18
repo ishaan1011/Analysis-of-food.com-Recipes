@@ -90,10 +90,9 @@ The pivot table above looks at the distribution of average ratings (grouped toge
 
 The missingness in the `review` column could potentially be classified as NMAR based on the premise that the reviewer, `user_id`, might have been too lazy to write out an explanation for their `rating` of the recipe `id`.
 
-Reasoning:
-Depending on how the reviewer felt when filling out their review, they could have been too lazy, too tired, or just accidentally failed to fill out the review column. This would lead to a `np.NaN` value for their review of the recipe `id`. This would indicate that the `review` column is NMAR.
+**Reasoning:** Depending on how the reviewer felt when filling out their review, they could have been too lazy, too tired, or just accidentally failed to fill out the review column. This would lead to a `np.NaN` value for their review of the recipe `id`. This would indicate that the `review` column is NMAR.
 
-On the other, hand, `review` could possibly be proven as MAR if more data is collected. From more data being collected, we could possibly prove that this column is MAR based on the following columns in their respective scenarios:
+On the other hand, `review` could possibly be proven as MAR if more data is collected. From more data being collected, we could possibly prove that this column is MAR based on the following columns in their respective scenarios:
 
 1. `user_id`: In this scenario, we would get more reviews from the same reviewers. If the same users are neglecting to leave a review when reviewing a recipe, we could label `review` as MAR due to this column being dependent on `user_id` for missingness.
 
