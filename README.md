@@ -122,7 +122,7 @@ We are exploring whether `description` is MCAR or MAR. We used the following per
 
 **P-value = 0.006**
 
-**Conclusion:** Because p-value = 0.006 < alpha level = 0.05, we reject the null hypothesis that the `description` column is not dependent on `average_rating` column. There is statistically significant evidence that the `description` column is dependent on `average_rating` column. This indicates that that **`description` is MAR** as it is dependent on `average_rating`.
+**Conclusion:** Because p-value = 0.006 < alpha level = 0.05, we reject the null hypothesis that the `description` column is not dependent on `average_rating` column. There is statistically significant evidence that the `description` column is dependent on `average_rating` column. This indicates that that **`description` is MAR** as its missingness is dependent on `average_rating`.
 
 ---
 # Hypothesis Testing
