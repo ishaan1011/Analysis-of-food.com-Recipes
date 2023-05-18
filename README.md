@@ -105,6 +105,7 @@ By incorporating these additional data and strategies, it may be possible to exp
 
 ---
 # Missingness Dependency Analysis
+
 We are exploring whether `description` is MCAR or MAR. We used the following permutation test to help us decide: 
 
 **Null hypothesis:** The `description` column is not dependent on `average_rating` column.
