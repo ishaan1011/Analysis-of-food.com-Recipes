@@ -105,7 +105,23 @@ By incorporating these additional data and strategies, it may be possible to exp
 
 ---
 # Missingness Dependency Analysis
-<iframe src="assets/emperical_dist_description_rating.html" width="800" height="600" frameborder="0"></iframe>
+We are exploring whether `description` is MCAR or MAR. We used the following permutation test to help us decide: 
+
+**Null hypothesis:** The `description` column is not dependent on `average_rating` column.
+
+**Alternative hypothesis:** The `description` column is dependent on `average_rating` column, indicating that `description` is MAR.
+
+
+**Test Statistic:** Absolute difference in mean of `average_rating` between rows with a `description` and rows with a missing `description`.
+
+**alpha = 0.05**
+
+<iframe src="assets/perm-test-steps.html" width=800 height=600 frameBorder=0></iframe>
+
+
+**P-value = 0.006**
+
+**Conclusion:** Because p-value = 0.006 < alpha level = 0.05, we reject the null hypothesis that the `description` column is not dependent on `average_rating` column. There is statistically significant evidence that the `description` column is dependent on `average_rating` column. This indicates that that **`description` is MAR** as it is dependent on `average_rating`.
 
 ---
 # Hypothesis Testing
