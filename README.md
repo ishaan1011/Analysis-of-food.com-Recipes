@@ -8,14 +8,15 @@ Authors: Joey Kaminsky and Ishaan Chadha
 
 The following dataset was downloaded from [food.com](https://www.food.com) as two datasets: one containing recipes and their specific attributes and another with ratings and their reviews of recipes. We merged these datasets into one to be able to answer the following question: **Is there a relationship between the number of steps in a recipe and the average rating of that recipe?**
 
-This is an important question in the world of cooking. From this question, we can gain some insight as to whether the number of steps in a recipe factors into its rating. This can influence cooks to edit the number of steps in their new recipes in the hopes of a greater rating by reviewers.
+This is an important question in the world of cooking. By looking at recipes and their respective average rating, this question will provide some insight as to whether the number of steps in a recipe factors into its rating. This can influence cooks to edit the number of steps in their new recipes in the hopes of a greater rating by reviewers.
 
 After cleaning the data, this dataset has 234,429 rows and 26 columns (234,429 rows and 18 columns prior to cleaning the data). In order to get familiar with the dataset, here are some important columns that will be mentioned:
 
 - `name`: name of the recipe
-- `id`: the id of a recipe, where the same recipe has the same value for this column 
+- `id`: the id of a recipe, where the same recipe has the same value for this column
+- `description`: description of the recipe with given `id`. 
 - `n_steps`: the number of steps in the recipe
-- `user_id`: reviewer of the recipe `user_id`
+- `user_id`: reviewer of the recipe `name`
 - `rating`: the rating given for the recipe by the reviewer, `user_id`
 - `average_rating`: the mean rating of a recipe `id`; recipes with the same `id` have the same value for this column
 
@@ -43,13 +44,13 @@ There is a list of data cleaning steps that were followed in order to make the a
    Converting the `submitted` column to a datetime format ensures that temporal information can be properly analyzed, but it has no direct impact on assessing the relationship between the number of steps and the average rating.
 
 * **Cleaning the tags Column:**
-   Cleaning the `tags` column ensures that the tags are transformed into a suitable format for analysis. However, the 'tags' column is not directly related to the analysis of the relationship between the number of steps and the average rating.
+   Cleaning the `tags` column ensures that the tags are transformed into a suitable format for analysis. However, the `tags` column is not directly related to the analysis of the relationship between the number of steps and the average rating.
 
 * **Cleaning the nutrition Column:**
    The cleaning of the `nutrition` column and extracting specific nutrition values have no direct impact on analyzing the relationship between the number of steps and the average rating. These nutrition values may be useful for exploring other aspects of the dataset.
 
 * **Cleaning the steps Column:**
-   Cleaning the `steps` column by splitting the string into a list of individual steps and removing unnecessary characters allows for a structured analysis of recipe steps. It enables us to make sure that the `n_steps` column has correct data and is in accordance with the the number of steps listed in teh `steps` column. This ensures that the data is accurate, which is crucial for assessing the relationship with the average rating.
+   Cleaning the `steps` column by splitting the string into a list of individual steps and removing unnecessary characters allows for a structured analysis of recipe steps. It enables us to make sure that the `n_steps` column has correct data and is in accordance with the the number of steps listed in the `steps` column. This ensures that the data is accurate, which is crucial for assessing the relationship with the average rating.
 
 * **Cleaning the description Column:**
    Cleaning the `description` column by replacing missing values with 'MISSING' has no direct impact on the analysis of the relationship between the number of steps and the average rating. However, it ensures that missing descriptions are appropriately identified and handled.
