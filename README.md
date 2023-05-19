@@ -108,7 +108,7 @@ By incorporating these additional data and strategies, it may be possible to exp
 
 We are exploring whether `description` is MCAR or MAR. We used the following permutation tests to help us decide: 
 
-**First Test**
+***First Test***
 
 **Null hypothesis:** The `description` column is not dependent on `n_steps` column.
 
@@ -122,14 +122,14 @@ We are exploring whether `description` is MCAR or MAR. We used the following per
 <iframe src="assets/emperical_dist_description_avg_rating.html" width=800 height=600 frameBorder=0></iframe>
 
 
-**P-value = 0.006**
+**P-value = 0.207**
 
-**Conclusion:** Because p-value = 0.006 > alpha level = 0.05, we fail to reject the null hypothesis that the `description` column is not dependent on `n_steps` column. There is not statistically significant evidence that the `description` column is dependent on `average_rating` column. 
+**Conclusion:** Because p-value = 0.207 > alpha level = 0.05, we fail to reject the null hypothesis that the `description` column is not dependent on `n_steps` column. There is not statistically significant evidence that the `description` column is dependent on `average_rating` column. 
 
 Now, let us look at if the missingness `description` is dependent on `average_rating` column.
 
 
-**Second Test**
+***Second Test***
 
 **Null hypothesis:** The `description` column is not dependent on `average_rating` column.
 
