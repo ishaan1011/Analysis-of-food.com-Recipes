@@ -88,7 +88,7 @@ The pivot table above looks at the distribution of average ratings (grouped toge
 ---
 # NMAR Analysis
 
-The missingness in the `review` column could potentially be classified as NMAR based on the premise that the reviewer, `user_id`, might have been too lazy to write out an explanation for their `rating` of the recipe `id`.
+The missingness in the `review` column could potentially be classified as NMAR based on the premise that the reviewer might have been too lazy to write out an explanation for their `rating` of the recipe `id`.
 
 **Reasoning:** Depending on how the reviewer felt when filling out their review, they could have been too lazy, too tired, or just accidentally failed to fill out the review column. This would lead to a `np.NaN` value for their review of the recipe `id`. This would indicate that the `review` column is NMAR.
 
