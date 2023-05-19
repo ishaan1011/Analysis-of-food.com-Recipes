@@ -129,6 +129,8 @@ We are exploring whether `description` is MCAR or MAR. We used the following per
 Now, let us look at if the missingness `description` is dependent on `average_rating` column.
 
 
+
+
 ***Second Test***
 
 **Null hypothesis:** The `description` column is not dependent on `average_rating` column.
